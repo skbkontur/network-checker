@@ -3,16 +3,17 @@ package ztrace
 import (
 	"bytes"
 	"fmt"
-	"github.com/olekukonko/tablewriter"
-	"kontur.ru/edoops/network-checker/ztrace/geoip"
-	"kontur.ru/edoops/network-checker/ztrace/stats/describe"
-	"kontur.ru/edoops/network-checker/ztrace/stats/quantile"
 	"net"
 	"os"
 	"strings"
 	"sync"
 	"sync/atomic"
 	"time"
+
+	"github.com/olekukonko/tablewriter"
+	"kontur.ru/edoops/network-checker/ztrace/geoip"
+	"kontur.ru/edoops/network-checker/ztrace/stats/describe"
+	"kontur.ru/edoops/network-checker/ztrace/stats/quantile"
 )
 
 type ServerRecord struct {
@@ -225,7 +226,7 @@ func (t *TraceRoute) PrintRow(table *tablewriter.Table, id int) string {
 }
 
 func (t *TraceRoute) Print() {
-	fmt.Printf("\033[H\033[2J")
+	//fmt.Printf("\033[H\033[2J")
 	fmt.Printf("\n[%s]Traceroute Report\n\n", t.Dest)
 
 	table := tablewriter.NewWriter(os.Stdout)
