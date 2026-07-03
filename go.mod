@@ -1,14 +1,12 @@
 module kontur.ru/edoops/network-checker
 
-go 1.23.0
-
-toolchain go1.23.10
+go 1.25.0
 
 require (
 	github.com/charmbracelet/log v0.4.2
 	github.com/jedib0t/go-pretty/v6 v6.6.7
 	github.com/vishvananda/netlink v1.3.1
-	golang.org/x/net v0.41.0
+	golang.org/x/net v0.55.0
 )
 
 require (
@@ -34,6 +32,6 @@ require (
 	github.com/vishvananda/netns v0.0.5 // indirect
 	github.com/xo/terminfo v0.0.0-20220910002029-abceb7e1c41e // indirect
 	golang.org/x/exp v0.0.0-20231006140011-7918f672742d // indirect
-	golang.org/x/sys v0.33.0 // indirect
-	golang.org/x/text v0.26.0 // indirect
+	golang.org/x/sys v0.45.0 // indirect
+	golang.org/x/text v0.37.0 // indirect
 )
